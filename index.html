@@ -49,21 +49,24 @@
             padding: 20px;
         }
 
-        /* الهيدر (Hero Section) */
+        /* الهيدر (Hero Section) - تعديلات لرفع المحتوى وتقليل المساحة */
         header {
-            min-height: 90vh;
+            /* تم تقليل الارتفاع الأدنى لرفع المحتوى */
+            min-height: 60vh; 
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             background: radial-gradient(circle at center, #1e1e1e 0%, #121212 70%);
             position: relative;
+            /* إضافة حشوة متوازنة */
+            padding: 50px 0;
         }
 
         .hero-content h1 {
             font-size: 3.5rem;
             font-weight: 900;
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* تقليل الهامش السفلي */
             background: -webkit-linear-gradient(45deg, #fff, var(--primary-color));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -72,7 +75,7 @@
         .hero-content p {
             font-size: 1.5rem;
             color: var(--text-muted);
-            margin-bottom: 30px;
+            margin-bottom: 25px; /* تقليل الهامش السفلي */
         }
 
         .btn-download {
@@ -240,7 +243,6 @@
             gap: 20px;
         }
 
-        /* محاكاة شكل الهاتف بالـ CSS بدلاً من الصور لغرض التصميم */
         .phone-mockup {
             width: 260px;
             height: 500px;
@@ -256,7 +258,6 @@
             font-weight: bold;
         }
         
-        /* هنا تضع صور التطبيق الحقيقية لاحقاً */
         .phone-screen {
             width: 100%;
             height: 100%;
@@ -300,6 +301,7 @@
 
         /* التجاوب (Media Queries) */
         @media (max-width: 768px) {
+            header { min-height: 50vh; padding: 40px 0; } /* تعديل إضافي للموبايل */
             .hero-content h1 { font-size: 2.5rem; }
             .hero-content p { font-size: 1.1rem; }
             .section-title { font-size: 1.5rem; }
@@ -393,7 +395,7 @@
                 <span class="badge-pro">الأكثر طلباً</span>
                 <h2>مصروفي Pro</h2>
                 <div class="price-tag">
-                    <span class="price-sy">25,000 ل.س</span>
+                    <span class="price-sy">250 ل.س</span>
                     <span class="price-global">أو 2$ خارج سوريا</span>
                     <small style="color: #777">تدفع لمرة واحدة / مدى الحياة</small>
                 </div>
